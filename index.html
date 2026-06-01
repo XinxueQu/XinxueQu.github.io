@@ -1,234 +1,569 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xinxue (Shawn) Qu | University of Notre Dame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:   #0c2340;
+      --gold:   #c99700;
+      --gold-light: #f5e9a0;
+      --bg:     #f9f9f7;
+      --white:  #ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --card:   #ffffff;
+      --section-pad: 5rem 1.5rem;
+    }
 
-<!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>  Xinxue (Shawn) Qu | Home </title>
-<meta property="og:title" content="Xinxue (Shawn) Qu" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://xinxuequ.github.io/Home/" />
-<meta property="og:url" content="https://xinxuequ.github.io/Home/" />
-<meta property="og:site_name" content="Xinxue (Shawn) Qu" />
-<script type="application/ld+json">
-{"name":"Home","description":null,"author":null,"@type":"WebSite","url":"https://xinxuequ.github.io/Home/","image":null,"publisher":null,"headline":"Xinxue (Shawn) Qu","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/Home/assets/css/style.css?v=58e520b7902d6a79184381376fd37802a793b682">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Home</h1>
-      <h2 class="project-tagline"></h2>
-      
-        <a href="https://github.com/XinxueQu/Home" class="btn">View on GitHub</a>
-      
-      
-    </section>
+    html { scroll-behavior: smooth; }
 
-    <section class="main-content">
-      <h1 id="xinxue-shawn-qu">Xinxue (Shawn) Qu</h1>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
 
-<hr />
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { color: var(--gold); }
 
-<p>E-mail: <a href="mailto:quxinxue@iastate.edu">quxinxue@iastate.edu</a>   Tel：(940)-231-7310</p>
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 60px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
 
-<p>Address: 1360 Gerdin BLDG, 2167 Union Dr., Ames, IA, 50011</p>
+    .nav-brand {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .03em;
+    }
 
-<hr />
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      align-items: center;
+    }
 
-<h2 id="education">Education</h2>
+    .nav-links a {
+      color: rgba(255,255,255,.8);
+      font-size: .875rem;
+      font-weight: 500;
+      letter-spacing: .02em;
+      transition: color .2s;
+    }
 
-<p><strong>PhD, Management Information System</strong>, Iowa State Univeristy (Ames,IA, USA), 2014-2019 (expected)</p>
+    .nav-links a:hover { color: var(--gold); }
 
-<p><strong>M.S., Software Engineering</strong>, Peking University (Beijing, China), 2012-2014</p>
+    .nav-links .btn-cv {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: .35rem .9rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
 
-<p><strong>B.S., Management Information System</strong>, University of International Business and Economics (Beijing, China), 2008-2012</p>
+    .nav-links .btn-cv:hover { background: #e0ab00; }
 
-<h2 id="research-interests">Research Interests</h2>
+    /* ── HERO ── */
+    #hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+    }
 
-<dl>
-  <dt><strong>Topics</strong>:</dt>
-  <dd>
-    <p>Business Analytics, Multi-generation Diffusion, Technology Upgrades, Economics of Information Systems, Data Management</p>
-  </dd>
-  <dt><strong>Methodologies</strong>:</dt>
-  <dd>
-    <p>Machine Learning/Data Mining, Statistical Learning, Econometrics, Optimization (MDP), <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">Reinforcement Learning</a></p>
-  </dd>
-</dl>
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 3rem;
+      align-items: flex-start;
+    }
 
-<h2 id="journal-publications">Journal Publications</h2>
-<ol>
-  <li>
-    <p>Jiang, Z., K.P. Scheibe, S. Nilakanta, <strong>X.S. Qu</strong>, 2017. “The Economics of Public Beta Testing,” <em>Decision Science</em>, 48(1), pp.150-175.</p>
-  </li>
-  <li>
-    <p>Jiang, Z., <strong>X.S. Qu</strong>, D. Jain. “Optimal Market Entry Timing for Successive Generations of Technological Innovations,” <em>MIS Quarterly</em>, forthcoming.</p>
-  </li>
-</ol>
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--gold);
+      flex-shrink: 0;
+      background: #1e3a5f;
+    }
 
-<h2 id="papers-under-review">Papers Under Review</h2>
-<ol>
-  <li><strong>Qu, X.S.</strong> and Z. Jiang. “A Time-Based Dynamic Update Policy for Consolidated Database Systems,” Under 3rd round review at premium IS journal.</li>
-</ol>
+    .hero-text h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin-bottom: .4rem;
+    }
 
-<h2 id="conference-papers-and-presentations">Conference Papers and Presentations</h2>
-<ol>
-  <li>
-    <p>“Product Upgrade Prediction Using Bass Proportional Hazard Model,” with Aslan Lotfi, and Zhengrui Jiang., in <em>Proceedings of the 27th Annual Workshop on Information Technologies and Systems (WITS)</em>, Seoul, South Korea, December 2017.</p>
-  </li>
-  <li>
-    <p>“Predicting Consumers’ Update Behaviors in the Presence of Successive Product Versions,” with Aslan Lotfi, and Zhengrui Jiang, <em>INFORMS Workshop on Data Science</em>, Houston, TX, October 2017.</p>
-  </li>
-  <li>
-    <p>“Understanding Customers’ Product Upgrade Behavior—A Survival Analysis Approach,” with Aslan Lotfi, and Zhengrui Jiang, <em>INFORMS Conference on Information Systems and Technology (CIST)</em>, Houston, TX, October 2017.</p>
-  </li>
-  <li>
-    <p>“Understanding Customers’ Cross-Generation Product Upgrade Behavior,” with Aslan Lotfi, and Zhengrui Jiang, <em>Wharton Customer Analytics Initiative (WCAI) EA Research Symposium</em>, San Francisco, CA, June 2017.</p>
-  </li>
-  <li>
-    <p>“A Time-Based Dynamic Update Policy for Consolidated Database Systems,” with Zhengrui Jiang., <em>Winter Conference on Business Analytics</em>, Snowbird, UT, March 2017.</p>
-  </li>
-  <li>
-    <p>“Purchase Prediction Based on Multilevel Association Rule Mining,” with Zhengrui Jiang, <em>INFORMS Annual Conference</em>, Nashville, TN, November 2016.</p>
-  </li>
-  <li>
-    <p>“Understanding Consumers Cross-Generation Adoption and Frequent Shopping Patterns”, with Zhengrui Jiang, <em>WCAI/International Beauty Retailer Symposium</em>, Philadelphia, PA, March, 2016.</p>
-  </li>
-  <li>
-    <p>“Optimal Update Policy for Databases in Growth State,” with Zhengrui Jiang, in <em>Proceedings of the 25th Annual Workshop on Information Technologies and Systems (WITS)</em>, Dallas, TX, December 2015.</p>
-  </li>
-  <li>
-    <p>“Optimal Database Update Policy in the Age of Big Data,” with Zhengrui Jiang, the 13th Annual Big XII+ MIS Research Symposium, Ames, IA, APril, 2015.</p>
-  </li>
-</ol>
+    .hero-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: .2rem;
+    }
 
-<h2 id="working-in-progress">Working In Progress</h2>
-<ol>
-  <li>
-    <p>“Product Upgrade Prediction Using Bass Proportional Hazard Model,” with Aslan Lotfi and Zhengrui Jiang.</p>
-  </li>
-  <li>
-    <p>“Pre-launch Information Diffusion and Technology Adoption,” with Aslan Lotfi and Zhengrui Jiang.</p>
-  </li>
-  <li>
-    <p>“Impact of CIO’s Compensation on Organizational Performance and IT Strategy”, with Zhengrui Jiang, Chengxin Cao, and Lei Gao.</p>
-  </li>
-  <li>
-    <p>“Optimal Update Policy for CRM Systems Under Independent Data Errors”, with Zhengrui Jiang.</p>
-  </li>
-  <li>
-    <p>“Project-Oriented Recommendation based on Association Rules,” with Zhengrui Jiang and Zhu Zhang.</p>
-  </li>
-</ol>
+    .hero-institution {
+      font-size: .95rem;
+      color: rgba(255,255,255,.7);
+      margin-bottom: 1.4rem;
+    }
 
-<h2 id="teaching">Teaching</h2>
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
 
-<p><strong>Instructor</strong>, Ivy College of Business, Iowa State University</p>
+    .tag {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.9);
+      padding: .3rem .75rem;
+      border-radius: 20px;
+      font-size: .8rem;
+      font-weight: 500;
+    }
 
-<ul>
-  <li>
-    <p><em>Introduction to Management Information Systems</em> (MIS 301) Spring 2017- Fall 2017</p>
-  </li>
-  <li>
-    <p>Evaluations: Fall 2017: 4.45/5.0, 4.38/5.0; Spring 2017: 3.91/5.0.</p>
-  </li>
-</ul>
+    .hero-contact {
+      margin-top: 1.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-<p><strong>Teaching Assistant</strong>, Ivy College of Business, Iowa State University</p>
+    .hero-contact a {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      color: rgba(255,255,255,.75);
+      font-size: .875rem;
+      transition: color .2s;
+    }
 
-<ul>
-  <li><em>Advanced Business Analytics</em> (MIS 546 Section A, Section XW-online) Spring 2018</li>
-</ul>
+    .hero-contact a:hover { color: var(--gold); }
 
-<h2 id="honors-and-awards">Honors and Awards</h2>
+    /* ── SECTIONS ── */
+    section {
+      padding: var(--section-pad);
+    }
 
-<p>Outstanding Doctoral Student Research Award, Ivy College of Business, Iowa State University, April 2018</p>
-      
-<p>Research in Excellence Award, Ivy College of Business, Iowa State University, April 2017</p>
+    .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-<p>National Scholarship issued by Chinese Ministry of Education, December 2013</p>
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.9rem;
+      color: var(--navy);
+      margin-bottom: 2rem;
+      padding-bottom: .6rem;
+      border-bottom: 3px solid var(--gold);
+      display: inline-block;
+    }
 
-<p>Merit Student in PKU issued by Peking University, July 2013</p>
+    .subsection-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin: 2rem 0 1rem;
+    }
 
-<p>The Outstanding Graduates awarded by UIBE, June 2012</p>
+    /* ── PUBLICATIONS ── */
+    .pub-list { list-style: none; }
 
-<p>Merit Student Awarded by Education Department of Beijing, China, October, 2009</p>
+    .pub-item {
+      padding: 1.1rem 1.2rem;
+      background: var(--card);
+      border-radius: 8px;
+      border-left: 4px solid var(--gold);
+      margin-bottom: .85rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
 
-<h2 id="languages">Languages</h2>
-<ul>
-  <li>
-    <p>Human Languages:</p>
+    .pub-item.working {
+      border-left-color: #9ca3af;
+    }
 
-    <ul>
-      <li>
-        <p>English (fluent)</p>
+    .pub-title {
+      font-weight: 600;
+      font-size: .95rem;
+      color: var(--navy);
+      margin-bottom: .25rem;
+    }
+
+    .pub-authors {
+      font-size: .85rem;
+      color: var(--muted);
+      margin-bottom: .25rem;
+    }
+
+    .pub-venue {
+      font-size: .85rem;
+      font-style: italic;
+      color: var(--text);
+    }
+
+    .pub-badge {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      margin-left: .5rem;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .badge-forthcoming { background: #fef3c7; color: #92400e; }
+    .badge-accepted    { background: #d1fae5; color: #065f46; }
+
+    /* ── TEACHING ── */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .course-card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      border-top: 4px solid var(--navy);
+    }
+
+    .course-code {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+
+    .course-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ── MEDIA ── */
+    .media-card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.3rem 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      max-width: 680px;
+    }
+
+    .media-icon {
+      font-size: 2rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .media-source {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--gold);
+      margin-bottom: .3rem;
+    }
+
+    .media-title {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ── CONTACT / FOOTER ── */
+    #contact {
+      background: var(--navy);
+      color: var(--white);
+      padding: 3.5rem 2rem;
+    }
+
+    .contact-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-inner .section-title {
+      color: var(--white);
+      border-color: var(--gold);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-item label {
+      display: block;
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--gold);
+      margin-bottom: .3rem;
+    }
+
+    .contact-item p, .contact-item a {
+      font-size: .9rem;
+      color: rgba(255,255,255,.85);
+    }
+
+    .contact-item a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255,255,255,.1);
+      font-size: .8rem;
+      color: rgba(255,255,255,.4);
+      text-align: center;
+    }
+
+    /* ── ALTERNATING BG ── */
+    section:nth-of-type(even) { background: var(--white); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero-inner { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+      .tags { justify-content: center; }
+      .hero-contact { justify-content: center; }
+      .nav-links { gap: 1rem; }
+      .nav-links .btn-cv { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#hero">Shawn Qu</a>
+  <ul class="nav-links">
+    <li><a href="#research">Research</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" class="btn-cv">CV</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <!-- Replace src with your actual photo path -->
+    <img class="profile-photo" src="photo.jpg" alt="Xinxue (Shawn) Qu" onerror="this.style.display='none'" />
+    <div class="hero-text">
+      <h1>Xinxue (Shawn) Qu</h1>
+      <p class="hero-title">Assistant Professor of IT, Analytics &amp; Operations</p>
+      <p class="hero-institution">Mendoza College of Business &nbsp;·&nbsp; University of Notre Dame</p>
+      <div class="tags">
+        <span class="tag">Multi-Generation Innovation Diffusion</span>
+        <span class="tag">Economics of Machine Learning</span>
+        <span class="tag">Data Management &amp; Privacy</span>
+        <span class="tag">Business Analytics &amp; Optimization</span>
+      </div>
+      <div class="hero-contact">
+        <a href="mailto:xqu2@nd.edu">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          xqu2@nd.edu
+        </a>
+        <a href="https://github.com/XinxueQu" target="_blank" rel="noopener">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.021C22 6.484 17.522 2 12 2z"/></svg>
+          XinxueQu
+        </a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          Google Scholar
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="section-inner">
+    <h2 class="section-title">Research</h2>
+
+    <p class="subsection-title">Journal Publications</p>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <p class="pub-title">Shapley-Value-Based Feature Attribution for Data Privacy Protection<span class="pub-badge badge-forthcoming">Forthcoming</span></p>
+        <p class="pub-authors">Qu, X.S., Darku, F.B., Guo, H.</p>
+        <p class="pub-venue">MIS Quarterly, 2025</p>
       </li>
-      <li>
-        <p>Chinese (native)</p>
+
+      <li class="pub-item">
+        <p class="pub-title">Strategizing Value-added Services for Platform Firms</p>
+        <p class="pub-authors">Hou, L.*, Qu, X.S.*, Chen, Y., Xue, L. &nbsp;<em>(* co-first authors)</em></p>
+        <p class="pub-venue">Production and Operations Management, 34(10), 2025</p>
       </li>
+
+      <li class="pub-item">
+        <p class="pub-title">Cooperation between Marketplace Platform and Large Sellers: An Economic Analysis<span class="pub-badge badge-forthcoming">Forthcoming</span></p>
+        <p class="pub-authors">Liang, D., Feng, H., Qu, X.S., Feng, N., Li, M.</p>
+        <p class="pub-venue">Journal of the Association for Information Systems</p>
+      </li>
+
+      <li class="pub-item">
+        <p class="pub-title">Capitalizing on the Moment: The Strategic Role of Information Disclosure in Online Crowdfunding<span class="pub-badge badge-accepted">Accepted</span></p>
+        <p class="pub-authors">Bhargava, H., Qu, X.S., Son, Y., Sun, D.</p>
+        <p class="pub-venue">Production and Operations Management</p>
+      </li>
+
+      <li class="pub-item">
+        <p class="pub-title">Predicting Upgrade Timing for Successive Product Generations</p>
+        <p class="pub-authors">Qu, X.S., Lotfi, A., Jain, D.C., Jiang, Z.</p>
+        <p class="pub-venue">Production and Operations Management, 31(5): 2067–2083, 2022</p>
+      </li>
+
+      <li class="pub-item">
+        <p class="pub-title">A Time-Based Dynamic Synchronization Policy for Consolidated Database Systems</p>
+        <p class="pub-authors">Qu, X.S., Jiang, Z.</p>
+        <p class="pub-venue">MIS Quarterly, 43(3): 787–806, 2019</p>
+      </li>
+
+      <li class="pub-item">
+        <p class="pub-title">Optimal Market Entry Timing for Successive Generations of Technological Innovations</p>
+        <p class="pub-authors">Jiang, Z., Qu, X.S., Jain, D.C.</p>
+        <p class="pub-venue">MIS Quarterly, 43(4): 1041–1057, 2019</p>
+      </li>
+
+      <li class="pub-item">
+        <p class="pub-title">The Economics of Public Beta Testing</p>
+        <p class="pub-authors">Jiang, Z., Scheibe, K.P., Nilakanta, S., Qu, X.S.</p>
+        <p class="pub-venue">Decision Sciences, 48(1): 150–175, 2017</p>
+      </li>
+
     </ul>
-  </li>
-  <li>
-    <p>Programming Languages</p>
 
-    <ul>
-      <li>R, Python, Java, C, MySQL, Matlab, Oracle</li>
+    <p class="subsection-title">Working Papers</p>
+    <ul class="pub-list">
+
+      <li class="pub-item working">
+        <p class="pub-title">Don't Kill the Web: Strategic Channel Design for UGC Platforms in the App Era</p>
+        <p class="pub-authors">Tong, Z., Qu, X.S., Feng, H.</p>
+      </li>
+
+      <li class="pub-item working">
+        <p class="pub-title">A Dynamic Patching Policy for Enterprise Information Systems</p>
+        <p class="pub-authors">Jia, Q., Qu, X.S., Jiang, Z.</p>
+      </li>
+
+      <li class="pub-item working">
+        <p class="pub-title">Relevance or Profits? Cost-Aware Recommender System Design for Streaming Services</p>
+        <p class="pub-authors">Feng, H., Qu, X.S., Jiang, Z.</p>
+      </li>
+
+      <li class="pub-item working">
+        <p class="pub-title">Sleeping with the Enemy? Co-Funding Your Competitor's Product Development</p>
+        <p class="pub-authors">Bhargava, H., Qu, X.S., Sun, D.</p>
+      </li>
+
+      <li class="pub-item working">
+        <p class="pub-title">The Influence of Malicious Behavior on Online Ratings</p>
+        <p class="pub-authors">Bhargava, H., Lee, J.H., Qu, X.S., Sun, D.</p>
+      </li>
+
     </ul>
-  </li>
-</ul>
+  </div>
+</section>
 
-<h2 id="references">References</h2>
-<blockquote>
-  <dl>
-    <dt>Zhengrui Jiang</dt>
-    <dd>Thome Professor in Business</dd>
-    <dd>Associate Professor of Information Systems</dd>
-    <dd>Ivy College of Business, Iowa State University</dd>
-  </dl>
-</blockquote>
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="section-inner">
+    <h2 class="section-title">Teaching</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <p class="course-code">MSBR/MSSA 70530</p>
+        <p class="course-name">Cloud Analytics</p>
+      </div>
+      <div class="course-card">
+        <p class="course-code">ITAO 40730</p>
+        <p class="course-name">Cloud Computing</p>
+      </div>
+      <div class="course-card">
+        <p class="course-code">ITAO 30230</p>
+        <p class="course-name">Data Management</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<blockquote>
-  <dl>
-    <dt>Zhu Zhang</dt>
-    <dd>Kingland Faculty Fellow in Business Analytics</dd>
-    <dd>Associate Professor of Information Systems</dd>
-    <dd>Ivy College of Business, Iowa State University</dd>
-  </dl>
-</blockquote>
+<!-- MEDIA -->
+<section id="media">
+  <div class="section-inner">
+    <h2 class="section-title">Media</h2>
+    <div class="media-card">
+      <div class="media-icon">📰</div>
+      <div>
+        <p class="media-source">Mendoza College of Business · University of Notre Dame</p>
+        <p class="media-title">New model helps to identify when users are likely to upgrade software products</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<blockquote>
-  <dl>
-    <dt>Joey F. George</dt>
-    <dd>The John D. DeVries Endowed Chair in Business</dd>
-    <dd>Professor of Information Systems</dd>
-    <dd>Ivy College of Business, Iowa State University</dd>
-  </dl>
-</blockquote>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <label>Email</label>
+        <a href="mailto:xqu2@nd.edu">xqu2@nd.edu</a>
+      </div>
+      <div class="contact-item">
+        <label>Office</label>
+        <p>Mendoza College of Business<br />University of Notre Dame<br />Notre Dame, IN 46556</p>
+      </div>
+      <div class="contact-item">
+        <label>Links</label>
+        <p>
+          <a href="https://github.com/XinxueQu" target="_blank" rel="noopener">GitHub</a><br />
+          <a href="https://sites.google.com/view/shawnqu" target="_blank" rel="noopener">Google Sites</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Xinxue (Shawn) Qu · University of Notre Dame</p>
+  </div>
+</section>
 
-<blockquote>
-  <dl>
-    <dt>Wei Zhang</dt>
-    <dd>Associate Professor of Marketing</dd>
-    <dd>Ivy College of Business, Iowa State University</dd>
-  </dl>
-</blockquote>
-
-
-
-      <footer class="site-footer">
-        
-          <span class="site-footer-owner"><a href="https://github.com/XinxueQu/Home">Home</a> is maintained by <a href="https://github.com/XinxueQu">XinxueQu</a>.</span>
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </section>
-
-    
-  </body>
+</body>
 </html>
